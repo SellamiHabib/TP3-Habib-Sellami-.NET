@@ -7,4 +7,15 @@
         <RootNamespace>TP3_Habib_Sellami</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.1" />
+      <PackageReference Include="SQLite" Version="3.13.0" />
+      <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Shared\_Layout.cshtml" />
+      <AdditionalFiles Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    </ItemGroup>
+
 </Project>

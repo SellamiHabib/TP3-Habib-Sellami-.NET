@@ -1,0 +1,21 @@
+@model TP3_Habib_Sellami.Models.Person
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Person details</h2>
+<div class="row">
+
+        <div class="col mb-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="@Model.Image" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.FirstName @Model.LastName</h5>
+                    <p>Email : @Model.Email</p>
+                    <p>Country : @Model.Country</p>
+                </div>
+            </div>
+        </div>
+</div>

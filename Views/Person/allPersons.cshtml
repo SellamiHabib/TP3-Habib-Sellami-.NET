@@ -1,0 +1,22 @@
+@using TP3_Habib_Sellami.Models
+@model List<Person>
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h2>All Persons</h2>
+<div class="row">
+    @foreach (Person person in @Model)
+    {
+        <div class="col mb-3">
+            <div class="card">
+                <div class="card-header">
+                    @person.FirstName @person.LastName
+                </div>
+                <div class="card-body">
+                    @person.Country
+                </div>
+            </div>
+        </div>
+    }
+</div>

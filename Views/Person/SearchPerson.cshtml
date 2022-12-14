@@ -1,0 +1,18 @@
+@model TP3_Habib_Sellami.Models.PersonDTO
+@{
+    ViewData["Title"] = "Rechercher une Personne";
+}
+<h1>@ViewData["Title"]</h1>
+
+@using (Html.BeginForm("SearchHandler", "Person", FormMethod.Post))
+{
+    <label>First Name</label>
+    @Html.TextBoxFor(m=>m.FirstName)
+    ;
+    <br />
+    <label>Country</label>
+    @Html.TextBoxFor(m=>m.Country)
+    ;
+    <br />
+    <input type="submit" class="btn btn-primary" value="Search" />
+}
